@@ -91,6 +91,20 @@ cur
 593 1075
 ```
 
+A shape with nothing else but coordinates:
+
+```
+200   91
+187   95
+173  105
+...
+242  105
+228   95
+214   91
+```
+
+Examples adapted from [Momocs](https://github.com/vbonhomme/Momocs/): `bot[1]`, `olea[1]`, `charring[1]`, `shapes[1]`.
+
 ### From/to .coo
 * `.coo` is intended to be a exchange file format.
 * R functions for conversions to/from/via `.coo` are being developped as a standalone package

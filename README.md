@@ -2,7 +2,7 @@
 ===========
 
 * Work in progress; any comment/question/etc. [is welcome](https://github.com/vbonhomme/coo-file-format/issues/new)
-* .xml will probably be more than an option
+* yaml or xml will probably be more than an option
 
 ### Rationale
 * Easy to read/write by human/machine plain text

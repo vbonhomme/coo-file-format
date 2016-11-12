@@ -19,9 +19,12 @@ to_coo.matrix <- function(x)
 #' bot[1] %>% coo_sample(8) %>% to_coo
 
 to_coo.Coo <- function(x){
-  c(x$fac %>% to_coo,
-    x$coo[[1]] %>% to_coo)
+  f <- function(x) c(x$fac %>% to_coo, x$coo[[1]] %>% to_coo)
+  n <- paste0(names(x), ".coo")
+  for (i in seq(length(x)))
+    x %>% slice(i) %>% f() %>% write(file=n[i])
 }
+bot %>% to_coo()
 # bot %>% slice(1) %>% to_coo()
 
 read_coo <- function(file){
